@@ -32,7 +32,7 @@ jobs:
           name: Deploy to Render Production
           command: |
             echo "Deploying to Render production"
-            curl $RENDER_PRODUCTION_DEPLOYHOOK
+            curl $RENDER_STAGING_DEPLOYHOOK
 
 workflows:
   run-tests-and-deploy-to-staging-then-production:
